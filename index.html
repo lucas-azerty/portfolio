@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation reste identique -->
+    <!-- Navigation avec le logo Portfolio -->
     <nav>
+        <div class="logo">Portfolio</div>
         <ul>
             <li><a href="#welcome">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#education">Parcours Scolaire</a></li>
-            <li><a href="#experiences">Expériences</a></li> 
+            <li><a href="#experiences">Expériences</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -34,51 +37,69 @@
             </div>
         </section>
 
-        <!-- A propos de moi  -->
+        <!-- À propos de moi avec liens LinkedIn et mail -->
         <section id="about" class="section container">
             <h2 class="section-title glowing-text">À propos de moi</h2>
             <div class="about-content">
-                <div class="about-photo">
-                    <img src="image/2SIO_RICHIER_Lucas.JPG" alt="Lucas Richier" loading="lazy">
+                <div class="about-photo animated-photo">
+                    <img src="./image/2SIO_RICHIER_Lucas.JPG" alt="Lucas Richier" loading="lazy">
                 </div>
 
                 <div class="about-text">
                     <p class="about-paragraph">
-                        Je m'appelle Lucas RICHIER, j'ai actuellement 21 ans et je suis étudiant en BTS SIO au lycée Chaptal à Quimper. 
+                        Je m'appelle Lucas RICHIER, j'ai actuellement 21 ans et je suis étudiant en BTS SIO au lycée
+                        Chaptal à Quimper.
                         Je suis également Gendarme Adjoint de réserve dans le département 29.
                     </p>
                     <p class="about-paragraph">
-                        Ce que j'aime le plus dans l'univers numerique, c'est l'informatique, le web et l'aspect design. Passionné par ces domaines, 
+                        Ce que j'aime le plus dans l'univers numerique, c'est l'informatique, le web et l'aspect design.
+                        Passionné par ces domaines,
                         j'ai pu acquérir de nombreuses compétences et connaissances.
                     </p>
                     <p class="about-paragraph">
-                        Vous trouverez dans mon Portfolio mes travaux réalisés dans le cadre de mes études et de ma carrière professionnelle. 
+                        Vous trouverez dans mon Portfolio mes travaux réalisés dans le cadre de mes études et de ma
+                        carrière professionnelle.
                         Pour plus d'informations, vous pouvez me contacter via la section contact.
                     </p>
-                    <a href="./doc/CV LucasRichier.pdf" class="download-cv" download>Télécharger mon CV</a>
+                    <div class="about-links">
+                        <a href="./doc/CV LucasRichier.pdf" class="download-cv" download>Télécharger mon CV</a>
+                        <a href="mailto:lrichier.pro2@gmail.com" class="contact-link email-link">
+                            <span class="link-icon">✉️</span> lrichier.pro2@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucas-richier-b67548253/" target="_blank"
+                            rel="noopener noreferrer" class="contact-link linkedin-link">
+                            <span class="link-icon">🔗</span> LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Parcours Scolaires -->
-        <section id="education" class="section container">
-            <h2 class="section-title glowing-text">Parcours Scolaire</h2>
-            <div class="school-timeline">
-                <div class="school-item">
-                    <h3>Lycée Le Likes</h3>
-                    <p>2018 - 2022</p>
-                    <p>Bac Systèmes Numériques</p>
-                </div>
-                <div class="school-item">
-                    <h3>Lycée Chaptal</h3>
-                    <p>2023 - 2025</p>
-                    <p>BTS SIO - Option Développement</p>
-                </div>
-            </div>
-        </section>
+    <!-- Parcours Scolaires -->
+<section id="education" class="section container">
+    <h2 class="section-title glowing-text">Parcours Scolaire</h2>
+    <div class="school-timeline">
+        <div class="school-item">
+            <h3>Lycée Le Likes</h3>
+            <p>2018 - 2022</p>
+            <p>Bac Systèmes Numériques</p>
+            <div class="skill-description">Acquisition des compétences fondamentales en systèmes numériques et préparation aux études supérieures dans le domaine de l'informatique.</div>
+        </div>
+        <div class="school-item">
+            <h3>Lycée Chaptal</h3>
+            <p>2023 - 2025</p>
+            <p>BTS SIO - Option Développement</p>
+            <div class="skill-description">Maîtrise des langages de programmation pour développer des applications web, logicielles ou mobiles. Formation complète en développement back-end et front-end.</div>
+        </div>
+        <div class="school-item">
+            <h3>École Skilzh Quimper</h3>
+            <p>2025 - À venir</p>
+            <p>Bachelor en Communication et Média</p>
+            <div class="skill-description">Formation en communication digitale et média. Actuellement en recherche d'alternance pour compléter cette formation et mettre en pratique les compétences acquises.</div>
+        </div>
+    </div>
+</section>
 
         <!-- Stages -->
-
         <section id="experiences" class="section container">
             <h2 class="section-title glowing-text">Expériences</h2>
             <div class="experience-grid">
@@ -86,10 +107,10 @@
                     <h3>Stage Eika Informatique</h3>
                     <p class="experience-date">2018 - 2023</p>
                     <div class="experience-details">
-                        <p> Stage Technicien</p>
+                        <p><strong>Stage Technicien</strong></p>
                         <p>• Développement de sites WordPress personnalisés</p>
                         <p>• Créations de Flyers</p>
-                        <p>• Prise de contacte</p>
+                        <p>• Prise de contact</p>
                     </div>
                 </div>
 
@@ -97,7 +118,7 @@
                     <h3>Stage Île Longue</h3>
                     <p class="experience-date">2023 - 2024</p>
                     <div class="experience-details">
-                        <p>Gestion de projet informatique/Développement VBA</p>
+                        <p><strong>Gestion de projet informatique/Développement VBA</strong></p>
                         <p>• Création d'outils d'automatisation</p>
                         <p>• Gestion de base de données</p>
                         <p>• Gestion de projets</p>
@@ -108,7 +129,7 @@
                     <h3>Stage Rafael Coaching</h3>
                     <p class="experience-date">2024 - 2025</p>
                     <div class="experience-details">
-                        <p>Amélioration site web CMS et Communication</p>
+                        <p><strong>Amélioration site web CMS et Communication</strong></p>
                         <p>• Refonte de l'interface utilisateur</p>
                         <p>• Optimisation des performances</p>
                         <p>• Stratégie de communication digitale</p>
@@ -119,7 +140,7 @@
                     <h3>Formation Gendarmerie</h3>
                     <p class="experience-date">2023</p>
                     <div class="experience-details">
-                        <p>Formation pour la réserve opérationnelle</p>
+                        <p><strong>Formation pour la réserve opérationnelle</strong></p>
                         <p>• Formation tactique et juridique</p>
                         <p>• Préparation opérationnelle</p>
                         <p>• Gestion des interventions</p>
@@ -134,19 +155,23 @@
             <div class="skills-grid">
                 <div class="skill-item">
                     <h3 class="skill-name">Programmation</h3>
-                    <div class="skill-description">Maîtrise des langages de programmation pour développer des applications web, logicielles ou mobiles. Que ce soit pour du back end ou front end.</div>
+                    <div class="skill-description">Maîtrise des langages de programmation pour développer des
+                        applications web, logicielles ou mobiles. Que ce soit pour du back end ou front end.</div>
                 </div>
                 <div class="skill-item">
-                    <h3 class="skill-name">Reseau Sociaux</h3>
-                    <div class="skill-description">Compétences en gestion et animation de réseaux sociaux pour développer une communauté et améliorer la visibilité en ligne.</div>
+                    <h3 class="skill-name">Réseaux Sociaux</h3>
+                    <div class="skill-description">Compétences en gestion et animation de réseaux sociaux pour
+                        développer une communauté et améliorer la visibilité en ligne.</div>
                 </div>
                 <div class="skill-item">
                     <h3 class="skill-name">Gestion de projets</h3>
-                    <div class="skill-description">Planification, coordination et suivi des différentes étapes d’un projet pour atteindre les objectifs définis dans les délais impartis. </div>
+                    <div class="skill-description">Planification, coordination et suivi des différentes étapes d'un
+                        projet pour atteindre les objectifs définis dans les délais impartis.</div>
                 </div>
                 <div class="skill-item">
                     <h3 class="skill-name">Design</h3>
-                    <div class="skill-description">Création de concepts visuels et graphiques attrayants, avec un œil pour l'esthétique et l'expérience utilisateur.</div>
+                    <div class="skill-description">Création de concepts visuels et graphiques attrayants, avec un œil
+                        pour l'esthétique et l'expérience utilisateur.</div>
                 </div>
                 <div class="skill-item">
                     <h3 class="skill-name">Git</h3>
@@ -154,38 +179,26 @@
                 </div>
                 <div class="skill-item">
                     <h3 class="skill-name">KPIs</h3>
-                    <div class="skill-description">Analyse et interprétation des indicateurs clés de performance pour évaluer et optimiser les résultats d’une stratégie ou d’un projet.</div>
+                    <div class="skill-description">Analyse et interprétation des indicateurs clés de performance pour
+                        évaluer et optimiser les résultats d'une stratégie ou d'un projet.</div>
                 </div>
             </div>
         </section>
 
-        <!-- Contacte -->
-        <section id="contact" class="section contact-section">
-            <h2 class="section-title glowing-text">Contact</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <a href="mailto:lrichier.pro2@gmail.com">lrichier.pro2@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                        </div>
-                        <div class="contact-details">
-                            <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/lucas-richier-b67548253/" target="_blank" rel="noopener noreferrer">Lucas Richier</a>
-                        </div>
-                    </div>
-                </div>
+        <section id="certifications" class="section container">
+            <h2 class="section-title glowing-text">Certifications</h2>
+            <div class="certifications-grid">
+                <p>• Bientôt disponible !</p>
+                <!--<img src="./images/certif1.jpg" alt="Certification 1">-->
+                <!--<img src="./images/certif2.jpg" alt="Certification 2">-->
+                <!--<img src="./images/certif3.jpg" alt="Certification 3">-->
             </div>
         </section>
     </main>
+    
     <footer>
-        © 2024 Mon Portfolio. Tous droits réservés.
+        © 2024 Portfolio Lucas Richier. Tous droits réservés.
     </footer>
 </body>
+
 </html>
